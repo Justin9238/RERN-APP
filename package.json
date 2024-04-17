@@ -11,16 +11,16 @@
     "server-install": "cd server && install",
     "client-install": "cd client && npm install --legacy-peer-deps",
     "install-all": "concurrently \"npm run server-install\" \"npm run client-install\" ",
-    "dev": "sed -n '1,2p' .env > ./client/.env && concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
   "author": "Wakeel Kehinde",
   "license": "MIT",
   "devDependencies": {
-    "concurrently": "^7.3.0"
+    "concurrently": "^7.6.0"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
-    "nodemon": "^2.0.19"
+    "nodemon": "^3.1.0"
   }
 }
